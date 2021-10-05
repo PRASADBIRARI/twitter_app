@@ -14,25 +14,25 @@ export default function Post({
     return (
         <div className="post">
             <div className="post__avatar">
-                <Avatar src="https://miro.medium.com/fit/c/262/262/1*y0RL_nWltq-gkiJwEUjwHA.jpeg" />
+                <Avatar src={avatar} />
             </div>
             <div className="post__body">
                 <div className="post_header">
                     <div className="post__headerText">
                         <h3>
-                            Narendra Modi {" "}
+                            {displayName} {" "}
                             <span className="post__headerSpecial">
-                                <Verified className="post__batge"/>
+                                { verified &&<Verified className="post__batge"/>} @{username}
                             </span>
                         </h3>
                     </div>
                     <div className="post_headerDescription">
                         <p>
-                            Lluptas fuga. Tenetur, atque molestiae.
+                            {text}
                         </p>
                     </div>
                 </div>
-                <img src="https://c.tenor.com/g01carZ_O74AAAAM/indian-man-rolls-eyes-funny-gorilla.gif" alt=""/>
+                <img src={image} alt=""/>
                 <div className="post__footer">
                     <ChatBubbleOutlined fontSize="small"/>
                     <Repeat fontSixe="small"/>
