@@ -6,7 +6,7 @@ import './Tweetbox.css'
 
 export default function Tweetbox() {
     const [tweetMessage, setTweetMessage] = useState("")
-    const [tweetImage, settweetImage] = useState("")
+    consot [tweetImage, settweetImage] = useState("")
 
     const sendTweet = (e) => {
         e.preventDefault();
